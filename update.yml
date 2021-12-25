@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Update a single inventory source
+    inventory_source_update:
+      name: "Example Inventory Source"
+      inventory: "Hola"
+      organization: Default
