@@ -1,7 +1,8 @@
 - hosts: all
+  collections: awx.awx.inventory_source_update
   tasks:
   - name: Update a single inventory source
-    inventory_source_update:
+    awx.awx.inventory_source_update:
       name: "Example Inventory Source"
       inventory: "Hola"
       organization: Default
