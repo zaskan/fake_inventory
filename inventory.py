@@ -6,7 +6,7 @@ inv = {
     },
     'hosts': []
 }
-for num in range(0, 1000):
+for num in range(0, 10000):
     host = u"host-%0.2d" % num
     inv['hosts'].append(host)
     inv['_meta']['hostvars'][host] = dict(ansible_ssh_host='127.0.0.1', ansible_connection='local')
