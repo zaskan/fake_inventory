@@ -1,4 +1,4 @@
-## Get ip without network packages >> awk '/32 host/ { print i } {i=$2}' /proc/net/fib_trie
+## Get ip without network packages >> awk '/32 host/ { print i } {i=$2}' /proc/net/fib_trie | sort | uniq
 ---
 - hosts: localhost
   gather_facts: false
