@@ -1,3 +1,4 @@
+## Get ip without network packages >> awk '/32 host/ { print i } {i=$2}' /proc/net/fib_trie
 ---
 - hosts: localhost
   gather_facts: false
