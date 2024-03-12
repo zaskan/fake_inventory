@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Wait an specific amount of seconds
+      ansible.builtin.wait_for:
+        timeout: "{{ time }}"
